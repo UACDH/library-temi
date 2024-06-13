@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#027550"
+    tools:context=".MainActivity">
+
+    <!-- White horizontal banner at the top -->
+    <LinearLayout
+        android:id="@+id/top_banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp">
+
+        <!-- Image on the top left corner -->
+
+        <!-- Spacer to push links to the right -->
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="400dp"
+            android:layout_height="161dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/uab_logo" />
+
+        <View
+            android:layout_width="1173dp"
+            android:layout_height="187dp"
+            android:layout_weight="1" />
+
+        <!-- Links on the right side -->
+        <TextView
+            android:id="@+id/link1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link1_text"
+            android:textColor="#0000FF"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/link2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link2_text"
+            android:textColor="#0000FF"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/link3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link3_text"
+            android:textColor="#0000FF"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Table layout for buttons -->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- First row of buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Find Materials button -->
+            <Button
+                android:id="@+id/find_materials_button"
+                style="@style/dashboard_button"
+                android:text="@string/find_materials"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+
+            <!-- Borrow and Request button -->
+            <Button
+                android:id="@+id/borrow_request_button"
+                style="@style/dashboard_button"
+                android:text="@string/borrow_request"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+
+            <!-- Reserve Space button -->
+            <Button
+                android:id="@+id/reserve_space_button"
+                style="@style/dashboard_button"
+                android:text="@string/reserve_space"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+
+            <!-- Research Guides button -->
+            <Button
+                android:id="@+id/research_guides_button"
+                style="@style/dashboard_button"
+                android:text="@string/research_guides"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+        </TableRow>
+
+        <!-- Second row of buttons -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- Research Assistance button -->
+            <Button
+                android:id="@+id/research_assistance_button"
+                style="@style/dashboard_button"
+                android:text="@string/research_assistance"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+
+            <!-- Special Collections button -->
+            <Button
+                android:id="@+id/special_collections_button"
+                style="@style/dashboard_button"
+                android:text="@string/special_collections"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+
+            <!-- Events button -->
+            <Button
+                android:id="@+id/events_button"
+                style="@style/dashboard_button"
+                android:text="@string/events"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+
+            <!-- Download App button -->
+            <Button
+                android:id="@+id/download_app_button"
+                style="@style/dashboard_button"
+                android:text="@string/download_app"
+                app:cornerRadius="30dp"
+                app:strokeColor="#154A3A"
+                app:strokeWidth="3dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sample_gradient">
+
+    <ImageButton
+        android:id="@+id/volume_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_volume_on_80"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/painting_image"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/painting00" />
+
+    <TableLayout
+        android:id="@+id/painting_info_table"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/volume_image_button"
+        app:layout_constraintStart_toEndOf="@+id/painting_image"
+        app:layout_constraintTop_toTopOf="@+id/painting_image">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="6dp">
+
+            <TextView
+                style="@style/painting_info_key"
+                android:text="@string/artist" />
+
+            <TextView
+                android:id="@+id/artist_text"
+                style="@style/painting_info_value"
+                android:text="Charles Alston" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="6dp">
+
+            <TextView
+                style="@style/painting_info_key"
+                android:text="@string/year" />
+
+            <TextView
+                android:id="@+id/year_text"
+                style="@style/painting_info_value"
+                android:text="Circa 1950" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="6dp">
+
+            <TextView
+                style="@style/painting_info_key"
+                android:text="@string/medium" />
+
+            <TextView
+                android:id="@+id/medium_text"
+                style="@style/painting_info_value"
+                android:text="Oil on canvas" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="6dp">
+
+            <TextView
+                style="@style/painting_info_key"
+                android:text="@string/measurements" />
+
+            <TextView
+                android:id="@+id/measurements_text"
+                style="@style/painting_info_value"
+                android:text='30" x 24"' />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="6dp">
+
+            <TextView
+                style="@style/painting_info_key"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/description_text"
+                style="@style/painting_info_value"
+                android:text="New York City's lower Manhattan nocturnal skyline" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/qr_code_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/art_gallery_qr_code" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:maxWidth="180dp"
+        android:text="@string/scan_qr"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/qr_code_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/bright_blue"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="24dp"
+        android:paddingTop="6dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="6dp"
+        android:text="@string/select_painting"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/painting_info_table" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@color/bright_blue"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="24dp"
+        android:paddingTop="6dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="6dp"
+        android:text="@string/continue_tour"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/select_button"
+        app:layout_constraintStart_toEndOf="@+id/select_button"
+        app:layout_constraintTop_toTopOf="@+id/select_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

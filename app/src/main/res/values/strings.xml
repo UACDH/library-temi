@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Library Tour</string>
+    <string name="find_materials">Find Materials</string>
+    <string name="borrow_request">Borrow/Request</string>
+    <string name="reserve_space">Reserve Space</string>
+    <string name="research_guides">Research Guides</string>
+    <string name="research_assistance">Research Assistance</string>
+    <string name="special_collections">Special Collections</string>
+    <string name="events">Events</string>
+    <string name="download_app">Download App</string>
+    <string name="close">Close</string>
+    <string name="qr_code">QR Code</string>
+</resources>
