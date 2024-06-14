@@ -10,4 +10,7 @@
     <string name="download_app">Download App</string>
     <string name="close">Close</string>
     <string name="qr_code">QR Code</string>
+    <string name="uab_logo">UAB Logo</string>
+    <string name="about_link">https://library.uab.edu/</string>
+    <string name="support_link">https://www.robotemi.com/</string>
 </resources>

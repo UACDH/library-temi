@@ -12,7 +12,7 @@
         android:theme="@style/Theme.TemiTour">
         <meta-data
             android:name="com.google.android.actions"
-            android:resource="@xml/popup_activity" />
+            android:resource="@layout/popup_activity" />
         <meta-data
             android:name="com.robotemi.sdk.metadata.SKILL"
             android:value="@string/app_name" />

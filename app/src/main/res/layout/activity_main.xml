@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#027550"
-    tools:context=".MainActivity">
+    tools:context="com.example.librarytemi.MainActivity"
+    >
 
     <!-- White horizontal banner at the top -->
     <LinearLayout
@@ -28,7 +29,7 @@
             android:id="@+id/logo_image"
             android:layout_width="400dp"
             android:layout_height="161dp"
-            android:contentDescription="@string/logo"
+            android:contentDescription="@string/uab_logo"
             android:src="@drawable/uab_logo" />
 
         <View
@@ -41,7 +42,7 @@
             android:id="@+id/link1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/link1_text"
+            android:text="@string/about_link"
             android:textColor="#0000FF"
             android:padding="8dp" />
 
@@ -49,17 +50,17 @@
             android:id="@+id/link2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/link2_text"
+            android:text="@string/support_link"
             android:textColor="#0000FF"
             android:padding="8dp" />
 
-        <TextView
-            android:id="@+id/link3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/link3_text"
-            android:textColor="#0000FF"
-            android:padding="8dp" />
+<!--        <TextView-->
+<!--            android:id="@+id/link3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/link3_text"-->
+<!--            android:textColor="#0000FF"-->
+<!--            android:padding="8dp" />-->
     </LinearLayout>
 
     <!-- Table layout for buttons -->
