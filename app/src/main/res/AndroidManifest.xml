@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.temitour">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +10,9 @@
         android:roundIcon="@drawable/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TemiTour">
-
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@layout/popup_activity" />
         <meta-data
             android:name="com.robotemi.sdk.metadata.SKILL"
             android:value="@string/app_name" />
@@ -17,43 +20,40 @@
             android:name="@string/metadata_permissions"
             android:value="com.robotemi.permission.settings" />
 
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TourActivity"
+        <activity
+            android:name=".TourActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".TourSurveyActivity"
+        <activity
+            android:name=".TourSurveyActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".CoursesActivity"
+        <activity
+            android:name=".CoursesActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".EventsActivity"
+        <activity
+            android:name=".EventsActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".ProfessorsActivity"
+        <activity
+            android:name=".ProfessorsActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".AlumniActivity"
+        <activity
+            android:name=".AlumniActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".NewsActivity"
+        <activity
+            android:name=".NewsActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".InfoActivity"
+        <activity
+            android:name=".InfoActivity"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".FeedbackActivity"
+        <activity
+            android:name=".FeedbackActivity"
             android:parentActivityName=".MainActivity" />
-
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
