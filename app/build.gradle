@@ -7,7 +7,7 @@ android {
     buildToolsVersion "34.0.0"
 
     defaultConfig {
-        applicationId "com.example.temitour"
+        applicationId "com.example.librarytemi"
         minSdkVersion 22
         targetSdkVersion 34
         versionCode 1
@@ -26,7 +26,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.example.temitour'
+    namespace 'com.example.librarytemi'
 }
 
 dependencies {
@@ -35,7 +35,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     implementation 'androidx.navigation:navigation-fragment:2.3.5'
     implementation 'androidx.navigation:navigation-ui:2.3.5'
-    implementation 'com.google.android.material:material:1.3.0-alpha03'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.jsoup:jsoup:1.14.3'
     testImplementation 'junit:junit:4.+'

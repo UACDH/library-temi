@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.robotemi:sdk:0.10.78@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d120d807ba8383ae109dcf31ab702868/transformed/sdk-0.10.78/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d120d807ba8383ae109dcf31ab702868/transformed/sdk-0.10.78/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d120d807ba8383ae109dcf31ab702868/transformed/sdk-0.10.78/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/33b758b06ba07ae0e8f56fe0b6bb4aa8/transformed/jetified-sdk-0.10.78/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/33b758b06ba07ae0e8f56fe0b6bb4aa8/transformed/jetified-sdk-0.10.78/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/33b758b06ba07ae0e8f56fe0b6bb4aa8/transformed/jetified-sdk-0.10.78/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
