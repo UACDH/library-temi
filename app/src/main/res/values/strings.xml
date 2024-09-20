@@ -13,4 +13,11 @@
     <string name="about_link">https://library.uab.edu/</string>
     <string name="support_link">https://www.robotemi.com/</string>
     <string name="special_collections">Special Collections</string>
+    <string name="search_collection">Search the Collection</string>
+    <string name="databases">Databases</string>
+    <string name="e_journals">E-Journals</string>
+    <string name="digital_collections">Digital Collections</string>
+    <string name="clinical_resources">Clinical Resources</string>
+    <string name="request_materials">Request Materials</string>
+    <string name="arrow_png">White Arrow</string>
 </resources>

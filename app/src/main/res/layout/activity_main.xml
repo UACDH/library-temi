@@ -54,13 +54,14 @@
             android:textColor="#0000FF"
             android:padding="8dp" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/link3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/link3_text"-->
-<!--            android:textColor="#0000FF"-->
-<!--            android:padding="8dp" />-->
+        <TextView
+            android:id="@+id/link3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support_link"
+            android:textColor="#0000FF"
+            android:padding="8dp" />
+
     </LinearLayout>
 
     <!-- Table layout for buttons -->
